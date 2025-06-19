@@ -11,9 +11,12 @@ export default function FeedBack() {
     <div className="flex flex-col gap-4">
       <Popover>
         <PopoverTrigger asChild>
-          <Button variant="outline" className="h-fit px-3 py-1">
-            Feed Back
-          </Button>
+          <div className="relative">
+            <div className="absolute bottom-0 left-1/2 h-px w-full -translate-x-1/2 rounded-lg bg-gradient-to-r from-transparent via-zinc-700 to-transparent dark:via-zinc-300"></div>
+            <Button variant="outline" className="h-fit px-3 py-1">
+              Feed Back
+            </Button>
+          </div>
         </PopoverTrigger>
         <PopoverContent className="w-72">
           <h2 className="mb-2 text-sm font-semibold">Send us feedback</h2>
