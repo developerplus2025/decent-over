@@ -37,8 +37,11 @@ export default function MainTextHome() {
   }, []);
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      style={{
+        transform: `translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)`,
+      }}
+      initial={{ opacity: 0, y: 20, scale: 0.9598145285935085 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       className="relative mx-[5rem] mt-[1rem] flex w-full items-center justify-center gap-[2rem] min-[375px]:flex-col min-[645px]:flex-col xl:flex-col"
     >
@@ -142,7 +145,7 @@ export default function MainTextHome() {
         className="flex flex-col items-center justify-center gap-[2rem]"
       >
         <AnimateTextHome />
-        <h1 className="text-md w-[522px] text-center">
+        <h1 className="text-md w-[522px] text-center text-[#a1a1a1]">
           Dive into a seamless music experience with our cutting edge software.
           Collaborate effortlessly, unleash your creativity, manage playlists
           and craft professional quality tracks all in one powerful platform.
