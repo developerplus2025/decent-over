@@ -90,7 +90,7 @@ export default function RootLayout({
               }}
               offset={{ top: "80px" }}
               closeButton
-              className={`dark:bg-black ${GeistSans.className}`}
+              className={` ${GeistSans.className}`}
               position="top-center"
             />
             <RootProvider>{children}</RootProvider>
